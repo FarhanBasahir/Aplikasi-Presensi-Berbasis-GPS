@@ -15,7 +15,7 @@
                 <div href="/proseslogout" id="exit-button" style="margin-left: auto;">
                     <button class="btn btn-danger" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                         <ion-icon name="exit-outline"></ion-icon>
-                        Exit
+                        Log Out
                     </button>
                 </div>
                 <form id="logout-form" action="/proseslogout" method="GET" style="display: none;">
