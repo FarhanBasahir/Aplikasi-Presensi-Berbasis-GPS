@@ -95,10 +95,10 @@
             var marker = L.marker([position.coords.latitude, position.coords.longitude]).addTo(map);
 
             //Membuat Radius Kantor Poliban
-            // var circle = L.circle([-3.296579, 114.582140], {
+            var circle = L.circle([-3.296579, 114.582140], {
 
-            // radius contoh
-            var circle = L.circle([-3.291274, 114.590917], {
+                // radius contoh
+                // var circle = L.circle([-3.291274, 114.590917], {
                 color: 'blue',
                 fillColor: 'blue',
                 fillOpacity: 0.5,

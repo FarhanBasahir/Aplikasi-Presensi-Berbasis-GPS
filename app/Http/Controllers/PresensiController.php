@@ -21,12 +21,12 @@ class PresensiController extends Controller
     public function store(Request $request)
     {
 
-        //validasi hari kerja
-        // $hari_ini = date('N');
-        // if ($hari_ini >= 6) {
-        //     echo "error|Maaf, presensi hanya bisa dilakukan pada hari kerja (Senin - Jumat)|";
-        //     return;
-        // }
+        // validasi hari kerja
+        $hari_ini = date('N');
+        if ($hari_ini >= 6) {
+            echo "error|Maaf, presensi hanya bisa dilakukan pada hari kerja (Senin - Jumat)|";
+            return;
+        }
 
         // validasi jam kerja
         $jam_sekarang = date("H:i:s");
@@ -42,12 +42,12 @@ class PresensiController extends Controller
         $jam = date("H:i:s");
 
         // Lokasi Kantor Poliban
-        // $latitude_kantor = -3.296579;
-        // $longitude_kantor = 114.582140;
+        $latitude_kantor = -3.296579;
+        $longitude_kantor = 114.582140;
 
         // Lokasi Kantor Contoh
-        $latitude_kantor = -3.291274;
-        $longitude_kantor = 114.590917;
+        // $latitude_kantor = -3.291274;
+        // $longitude_kantor = 114.590917;
 
         $lokasi = $request->lokasi;
         $lokasi_user = explode(",", $lokasi);

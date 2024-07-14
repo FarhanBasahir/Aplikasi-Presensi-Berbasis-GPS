@@ -15,14 +15,11 @@ class AuthController extends Controller
         } else {
             return redirect('/')->with(['warning' => 'NIK atau Password Salah']);
         }
-
         // hasil debugging
         // $pass = 123;
         // echo Hash::make(($pass));
-
         // $nik = $request->nik; 
         // $password = $request->password;
-        
         // echo $nik;
         // echo $password;
     }
